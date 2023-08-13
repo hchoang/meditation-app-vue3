@@ -1,4 +1,5 @@
 # meditation-app
+App to play around with Vue 3
 
 ## Project setup
 ```
