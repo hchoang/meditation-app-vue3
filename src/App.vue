@@ -1,17 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <main class="app">
+    <ContainerPopUp />
+    <ContainerBackground />
+    <SoundView />
+    <ContainerTimer />
+    <ContainerLinks />
+  </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ContainerPopUp from '@/components/container/ContainerPopUp'
+import ContainerBackground from '@/components/container/ContainerBackground'
+import ContainerTimer from '@/components/container/ContainerTimer'
+import ContainerLinks from '@/components/container/ContainerLinks'
+import SoundView from '@/components/SoundView'
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    ContainerPopUp,
+    ContainerBackground,
+    ContainerTimer,
+    ContainerLinks,
+    SoundView
+  },
+};
 </script>
 
 <style>
@@ -21,6 +34,21 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>
