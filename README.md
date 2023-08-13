@@ -1,5 +1,5 @@
 # meditation-app
-App to play around with Vue 3
+Welcome to the Vue3 Mediation Web App! This project is a user-friendly web application built with Vue 3, specifically designed to facilitate effective mediation. Whether it's resolving conflicts or reaching agreements, our app provides a seamless experience for users to navigate through the mediation process.
 
 ## Project setup
 ```
